@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models import IntegerField
+import uuid
 
 
 # Create your models here.
@@ -10,6 +11,7 @@ class MyQuiz(models.Model):
         return self.name
 
 class QuizQuestion(models.Model):
+    id_question = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     text_question = models.CharField(max_length=1024)
     image_question = models.ImageField()
     option1 = models.CharField(max_length=64)
