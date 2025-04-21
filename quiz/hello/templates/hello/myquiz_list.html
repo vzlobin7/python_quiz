@@ -1,0 +1,15 @@
+<h1>Quiz List</h1>
+
+    {% if myquiz_list %}
+    <ul>
+
+      {% for quiz in myquiz_list %}
+      <li>
+        <a href="1">{{ quiz.name }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no quizes.</p>
+    {% endif %}
