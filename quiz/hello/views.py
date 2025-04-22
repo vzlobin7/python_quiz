@@ -6,9 +6,8 @@ from django.views import generic
 class QuizListView(generic.ListView):
     model = MyQuiz
 
-
-def question(request):
-    q = QuizQuestion.objects.first()
+def question(request, id):
+    q = QuizQuestion.objects.get(id=id)
     return render(
         request,
         'question.html',

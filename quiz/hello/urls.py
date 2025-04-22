@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     path("", views.QuizListView.as_view(), name='index'),
-    path("1", views.question, name='question'),
+    path("<int:id>/", views.question, name='question'),
 ]
