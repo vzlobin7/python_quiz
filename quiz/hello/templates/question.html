@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
+  <script>
+    function my_click(sender){
+      if (sender.id == {{correct_option}}) {
+        s=location.href;
+        s=s.substring(0,s.length-1)
+        f=s.lastIndexOf('/');
+        n=parseInt(s.slice(f+1,s.length));
+        if (n >= {{question_count}})
+          location.href=s.slice(0,f);
+        else
+          location.href=s.slice(0,f)+'/'+(n+1)+'/';
+      }
+      else sender.style.backgroundColor='#ff0000'
+    }
+  </script>
     <div class="content">
       <header class="header">
         <div class="image"><img src="/static/{{image}} " class="image"/></div>
@@ -19,18 +34,18 @@
           </div>
           <div class="frame">
             <div class="div">
-              <button class="button">
+              <button class="button" onclick="my_click(this)" id="1">
                 <div class="label-text-wrapper"><div class="label-text">{{option1}}</div></div>
               </button>
-              <button class="button">
+              <button class="button" onclick="my_click(this)" id="2">
                 <div class="label-text-wrapper"><div class="label-text">{{option2}}</div></div>
               </button>
             </div>
             <div class="frame-2">
-              <button class="state-layer-wrapper">
+              <button class="button" onclick="my_click(this)" id="3">
                 <div class="label-text-wrapper"><div class="label-text">{{option3}}</div></div>
               </button>
-              <button class="state-layer-wrapper">
+              <button class="button" onclick="my_click(this)" id="4">
                 <div class="label-text-wrapper"><div class="label-text">{{option4}}</div></div>
               </button>
             </div>
