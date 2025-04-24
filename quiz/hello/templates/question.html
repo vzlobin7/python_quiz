@@ -11,6 +11,7 @@
   <script>
     function my_click(sender){
       if (sender.id == {{correct_option}}) {
+        sender.style.backgroundColor='#00ff00'
         s=location.href;
         s=s.substring(0,s.length-1)
         f=s.lastIndexOf('/');
