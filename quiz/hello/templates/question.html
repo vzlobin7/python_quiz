@@ -17,7 +17,7 @@
         f=s.lastIndexOf('/');
         n=parseInt(s.slice(f+1,s.length));
         if (n >= {{question_count}})
-          location.href=s.slice(0,f);
+          location.href=s.slice(0,f-2);
         else
           location.href=s.slice(0,f)+'/'+(n+1)+'/';
       }
