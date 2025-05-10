@@ -1,0 +1,200 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 817px;
+  align-items: flex-start;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: var(--shape-corner-extra-large);
+}
+
+.content .header {
+  display: flex;
+  height: 441px;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 8px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: transparent;
+}
+
+.content .image {
+  position: relative;
+  align-self: stretch;
+  width: 216px;
+  border-radius: 28px;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.content .text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.content .headline-supporting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.content .supporting-text {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-medium-font-family);
+  font-weight: var(--m3-body-medium-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-body-medium-font-size);
+  letter-spacing: var(--m3-body-medium-letter-spacing);
+  line-height: var(--m3-body-medium-line-height);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  font-style: var(--m3-body-medium-font-style);
+}
+
+.content .frame {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.content .div {
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.content .button {
+  all: unset;
+  box-sizing: border-box;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  position: relative;
+  background-color: #65558f;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.content .state-layer {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.content .label-text {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-label-large-font-family);
+  font-weight: var(--m3-label-large-font-weight);
+  color: #ffffff;
+  font-size: var(--m3-label-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-label-large-letter-spacing);
+  line-height: var(--m3-label-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-label-large-font-style);
+}
+
+.content .state-layer-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  position: relative;
+  background-color: #65558f;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.content .frame-2 {
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.content .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  height: 40px;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  position: relative;
+  background-color: #65558f;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.content .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  position: relative;
+  background-color: #65558f;
+  border-radius: 100px;
+  overflow: hidden;
+}

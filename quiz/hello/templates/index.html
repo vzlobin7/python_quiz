@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<li><a href="{% url 'question' %}">Quiz</a></li>
+      {% for book in object_list %}
+      <li>
+        <a href="1">{{ book.name }}</a>
+      </li>
+      {% endfor %}
+</body>
+</html>
+
+
+
